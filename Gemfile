@@ -8,6 +8,8 @@ gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
+gem 'therubyracer'
+
 gem 'jquery-rails'
 
 gem 'mysql2'
@@ -63,7 +65,7 @@ group :development do
   gem 'capistrano-rails'    
   gem 'capistrano3-delayed-job', '~> 1.0'  
 
-  
+
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
