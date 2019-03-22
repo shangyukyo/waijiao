@@ -404,8 +404,8 @@ src="https://www.facebook.com/tr?id=1524412951213143&amp;ev=PageView&amp;noscrip
 
 
 
-          <li id="menu-item-15588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15588 data-item-id="15588">
-            <a href="<%= root_path%>" class="<%= action_name == 'index' ? 'fusion-bar-highlight' : nil%>" role="menuitem">
+          <li id="menu-item-15588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15588 <%= action_name == 'contact_us' ? 'current-menu-item' : nil %>" data-item-id="15588">
+            <a href="<%= contact_us_welcome_index_path%>" class="<%= action_name == 'contact_us' ? 'fusion-bar-highlight' : nil%>" role="menuitem">
               <span class="menu-text">联系我们</span>
             </a>
           </li>
