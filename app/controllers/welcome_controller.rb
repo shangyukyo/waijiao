@@ -3,8 +3,16 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def beijing_waijiao_paiqian
+  def index_gu_laoshi
+  end
 
+  def index_baojiang
+  end
+
+  def index_fukuan    
+  end
+
+  def beijing_waijiao_paiqian
   end
 
   def beijing_waijiao_jianzhi_waijiao_paiqian

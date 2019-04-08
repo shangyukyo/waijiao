@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resources :welcome do 
     collection do
+      get :index_baojiang
+      get :index_gu_laoshi
+      get :index_fukuan
       get :beijing_waijiao_paiqian
       get :beijing_waijiao_jianzhi_waijiao_paiqian
       get :beijing_waijiao_waidi_quanzhi_waijiao_paiqian
