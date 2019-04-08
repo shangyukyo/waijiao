@@ -1,0 +1,56 @@
+.pd-15
+  .panel.panel-default
+    .panel-heading    
+      i.fa.fa-reorder 
+      span.ml-10 详情
+
+    .panel-body
+      table.table.table-striped
+        tbody
+          tr
+            td 姓名
+            td #{@register.first_name} #{@register.last_name}
+
+          tr
+            td 学校名称
+            td= @register.school_name
+
+          tr
+            td 邮箱
+            td= @register.email
+
+          tr
+            td 电话
+            td= @register.phone        
+
+          tr
+            td Skype Id
+            td= @register.skype_id
+
+          tr
+            td 微信
+            td= @register.wechat_id
+
+          tr
+            td 学校网站
+            td= @register.school_website
+
+          tr
+            td 国家/城市
+            td= @register.country_and_city
+
+          tr
+            td 外教需求数量
+            td= @register.teachers_size              
+
+          tr
+            td 招聘要求
+            td= @register.recruitment_needs
+
+          tr
+            td 问题
+            td= @register.question
+
+          tr
+            td 从哪里了解到我们
+            td= @register.channel                                                                  

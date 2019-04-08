@@ -10,6 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2019_04_08_024725) do
+
+  create_table "registers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "school_name"
+    t.string "email"
+    t.string "phone"
+    t.string "skype_id"
+    t.string "wechat_id"
+    t.string "school_website"
+    t.string "country_and_city"
+    t.string "teachers_size"
+    t.text "recruitment_needs"
+    t.text "question"
+    t.text "channel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

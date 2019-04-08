@@ -25,6 +25,21 @@ Rails.application.routes.draw do
       get :waiguo_lietou_fuwu_liucheng
       get :waiguo_lietou_shoufei_qingkuang
       get :contact_us
+      get :register
+      post :register
     end
   end
+
+
+  scope :admin, module: 'admin' do 
+    scope shallow_path: 'index',  controller: 'index' do
+      get  :login
+      post :login
+
+      get :registers
+      get :show
+    end
+  end  
+
+
 end
