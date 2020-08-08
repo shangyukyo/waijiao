@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :welcome do 
     collection do
+      get :index
       get :index_baojiang
       get :index_gu_laoshi
       get :index_fukuan
@@ -38,6 +39,7 @@ Rails.application.routes.draw do
 
       get :registers
       get :show
+      get :delete_register
     end
   end  
 

@@ -16,6 +16,11 @@ class Admin::IndexController < Admin::ApplicationController
     @registers = Register.all.order('id desc')
   end
 
+  def delete_register
+    Register.find(params[:id]).destroy
+    redirect_to registers_path
+  end
+
   def show
     @register = Register.find params[:id]
   end
